@@ -1,0 +1,145 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "b0da78e4-227f-49e0-99a6-ec4f9cfcc53a": {
+        "id": "b0da78e4-227f-49e0-99a6-ec4f9cfcc53a",
+        "parent": null,
+        "name": "DebugDL1",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "729db017-159a-4798-a07c-d1eeb383ee17"
+        ],
+        "isRemovable": false,
+        "filePath": "DebugDL1"
+      },
+      "729db017-159a-4798-a07c-d1eeb383ee17": {
+        "id": "729db017-159a-4798-a07c-d1eeb383ee17",
+        "parent": "b0da78e4-227f-49e0-99a6-ec4f9cfcc53a",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "DebugDL1/lambda.js",
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigusEast1DebugDL1debugdl1get",
+            "config": {}
+          }
+        ],
+        "testCases": {
+          "032a7ebb-3de1-40f2-b354-054766adee36": {
+            "id": "032a7ebb-3de1-40f2-b354-054766adee36",
+            "name": "Test",
+            "functionId": "729db017-159a-4798-a07c-d1eeb383ee17",
+            "event": "{}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "rootNode": "b0da78e4-227f-49e0-99a6-ec4f9cfcc53a",
+    "openFiles": [
+      "729db017-159a-4798-a07c-d1eeb383ee17"
+    ],
+    "currentFileId": "729db017-159a-4798-a07c-d1eeb383ee17",
+    "resources": {
+      "sqssqs": {
+        "name": "sqssqs",
+        "type": "SQS",
+        "config": {
+          "mode": 1,
+          "existing": true,
+          "name": "sqs",
+          "url": "https://sqs.us-east-1.amazonaws.com/263248768798/sqs",
+          "selectedRegion": "us-east-1",
+          "deliveryDelay": "0",
+          "deliveryDelayUnit": "seconds",
+          "queueType": "standardQueue",
+          "defaultVisibilityTimeout": "30",
+          "defaultVisibilityTimeoutUnit": "seconds",
+          "messageRetentionPeriod": "345600",
+          "messageRetentionPeriodUnit": "seconds",
+          "maximumMessageSize": 256,
+          "receiveMessageWaitTime": "0",
+          "queueARN": "arn:aws:sqs:us-east-1:263248768798:sqs"
+        }
+      },
+      "apigusEast1DebugDL1debugdl1get": {
+        "name": "apigusEast1DebugDL1debugdl1get",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 0,
+          "apiName": "DebugDL1",
+          "endpointType": "EDGE",
+          "resourceMode": 0,
+          "resourceName": "debugdl1",
+          "resourcePath": "/debugdl1",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": true,
+          "stageMode": 0,
+          "stageName": "dev",
+          "mode": 0
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "javascript",
+          "version": "2.176.0",
+          "dev": true,
+          "notRemovable": false
+        },
+        "slappforge-sdk-aws": {
+          "name": "slappforge-sdk-aws",
+          "language": "javascript",
+          "version": "0.0.5",
+          "dev": false,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "DebugDL1",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1581437752795
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "DebugDL1",
+      "url": "https://github.com/asankhaperera/DebugDL1"
+    }
+  }
+}
