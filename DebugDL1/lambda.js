@@ -5,7 +5,7 @@ const sqs = new SL_AWS.SQS(AWS);
 exports.handler = async (event) => {
     debugger;
 
-    let messageBody = "Hello World 1";
+    let messageBody = "From SLAppForge Sigma IDE - Hello Change!";
 
     console.log(messageBody);
 
